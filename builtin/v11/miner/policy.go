@@ -119,7 +119,9 @@ var FaultMaxAge = WPoStProvingPeriod * 42 // PARAM_SPEC
 const WorkerKeyChangeDelay = ChainFinality // PARAM_SPEC
 
 // Minimum number of epochs past the current epoch a sector may be set to expire.
-const MinSectorExpiration = 180 * builtin.EpochsInDay // PARAM_SPEC
+// const MinSectorExpiration = 180 * builtin.EpochsInDay // PARAM_SPEC
+// easy for test
+const MinSectorExpiration = 2 * builtin.EpochsInDay // PARAM_SPEC
 
 // The maximum number of epochs past the current epoch that sector lifetime may be extended.
 // A sector may be extended multiple times, however, the total maximum lifetime is also bounded by
